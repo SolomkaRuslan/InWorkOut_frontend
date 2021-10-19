@@ -1,0 +1,79 @@
+.dropdown {
+  padding: 1em 1.25em;
+  border: none;
+  border-radius: 100px;
+  box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-size: 0.8rem;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  background: transparent;
+  backdrop-filter: blur(5px);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  user-select: none;
+}
+
+.small-dd {
+  min-width: 134px;
+}
+
+.margin-b {
+  margin-bottom: 1em;
+}
+
+.dropdown:hover,
+.dropdown-open {
+  background: rgba(255, 255, 255, 0.2);
+  outline: 1px solid white;
+}
+
+.dropdown-open svg {
+  transform: rotateZ(180deg);
+}
+
+.drowpdown-title {
+  width: 100%;
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dropdown svg {
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+}
+
+.dropdown-options {
+  z-index: 99;
+  position: absolute;
+  left: 0;
+  top: 115%;
+  width: 100%;
+  border: none;
+  border-radius: 7px;
+  box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 400;
+  background: rgb(175, 175, 175);
+  backdrop-filter: blur(5px);
+  transition: all 0.2s ease-in-out;
+  overflow: hidden;
+  user-select: none;
+  text-align: left;
+}
+
+.dropdown-option {
+  padding: 0.75em 1.25em;
+  font-family: Montserrat, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.dropdown-option:hover,
+.option-selected {
+  background: rgb(233, 233, 233);
+  color: rgba(107, 82, 0, 1);
+}

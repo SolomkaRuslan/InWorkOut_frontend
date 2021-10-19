@@ -1,0 +1,154 @@
+.profile--page {
+  margin-top: 6rem;
+  padding-bottom: 6rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.halhpage-big {
+  width: 50%;
+}
+.halhpage-small {
+  width: 45%;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.myform {
+  margin: 0 auto;
+  width: 100%;
+  padding: 1em;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  z-index: 2;
+}
+
+.myform + .myform {
+  margin-top: 1rem;
+  z-index: 1;
+}
+
+.myform p {
+  font-weight: 500;
+  color: white;
+  opacity: 0.6;
+  font-size: 1.4rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  transition: all 2s ease-in-out;
+}
+
+.myform h4,
+.myform h1 {
+  font-weight: 500;
+  color: #fff;
+  font-size: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.myform h1 {
+  font-size: 1.25rem;
+}
+
+.myform input,
+.myform-btn {
+  font-size: 0.8rem;
+  margin-bottom: 1em;
+  padding: 1em;
+  border: none;
+  border-radius: 100px;
+  box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  background: transparent;
+  backdrop-filter: blur(5px);
+  transition: all 0.2s ease-in-out;
+}
+
+.myform input:focus,
+.myform:focus {
+  box-shadow: #15202852 0px 0px 0px 3px;
+}
+
+.myform input:hover,
+.myform-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.myform-btn:hover {
+  outline: 1px solid white;
+}
+
+.myform-btn {
+  cursor: pointer;
+  width: auto;
+  font-size: 1rem;
+  padding: 0.4em 0.8em;
+  margin-bottom: 0.5rem;
+}
+
+.myform button {
+  display: flex;
+  align-items: center;
+}
+
+.myform button svg {
+  margin-left: 0.5rem;
+}
+
+::placeholder {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.name {
+  display: block;
+  width: 100%;
+}
+
+.part {
+  width: 100%;
+}
+
+.part + .part {
+  margin-left: 1em;
+}
+
+.exercise-input {
+  padding-top: 0.25rem;
+}
+
+.exercise-input + .exercise-input {
+  margin-top: 0.25rem;
+  border-top: 3px solid white;
+}
+
+.exercise-input .title {
+  margin-bottom: 4px;
+}
+
+.exercise-input svg {
+  color: white;
+  font-size: 1.5rem;
+  transform: rotateX(66);
+  cursor: pointer;
+}
+
+.exercise-input svg:hover {
+  color: rgba(107, 82, 0, 0.8);
+}

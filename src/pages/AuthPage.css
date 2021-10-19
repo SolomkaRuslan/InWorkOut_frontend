@@ -1,0 +1,236 @@
+*,
+*:hover,
+*:focus {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  outline: none;
+}
+
+.auth-page {
+  width: 100%;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+}
+
+.auth-page__content {
+  margin: 0 auto;
+  position: relative;
+  top: 25%;
+}
+
+/* FORMS */
+/* FORMS */
+
+.center-container {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 375px;
+}
+
+.auth-form {
+  height: 431px;
+  padding: 3em;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  z-index: 2;
+}
+
+.auth-form p {
+  font-weight: 500;
+  color: #fff;
+  opacity: 0.7;
+  font-size: 1.4rem;
+  margin-top: 0;
+  margin-bottom: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  transition: all 2s ease-in-out;
+}
+
+.auth-form input,
+.auth-btn {
+  display: block;
+  width: 100%;
+  padding: 1em;
+  margin-bottom: 2em;
+  border: none;
+  border-radius: 100px;
+  box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  background: transparent;
+  backdrop-filter: blur(5px);
+  transition: all 0.2s ease-in-out;
+}
+
+.auth-form input:focus,
+.auth-btn:focus {
+  box-shadow: #15202852 0px 0px 0px 3px;
+}
+
+.auth-form input:hover,
+.auth-btn:hover,
+.tester-login-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.auth-block:hover {
+  background: rgba(255, 255, 255, 0.225);
+}
+
+.auth-btn {
+  position: absolute;
+  cursor: pointer;
+  margin-bottom: 3rem;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  font-size: 1rem;
+}
+
+::placeholder {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.block {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 10px 10px 60px -8px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  transition: all 0.2s ease;
+}
+
+.auth-spiner-holder {
+  display: inline-block;
+  position: absolute;
+  top: 15.5%;
+  left: -9.5%;
+  width: 80px;
+  height: 80px;
+  z-index: 30;
+}
+
+.auth-block {
+  width: 90px;
+  height: 90px;
+  padding-top: 1.05rem;
+  padding-bottom: 2rem;
+  font-weight: 500;
+  color: #fff;
+  opacity: 0.7;
+  font-size: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  cursor: pointer;
+  border-width: 0;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.login {
+  top: -5%;
+  left: 90px;
+}
+
+.register {
+  top: -14%;
+  right: 90px;
+}
+
+.block-out {
+  animation: SlideOut 0.4s ease-in-out forwards;
+}
+
+.block-in {
+  animation: SlideIn 0.4s ease-in-out forwards;
+}
+
+@keyframes SlideOut {
+  0% {
+    top: -5%;
+  }
+
+  100% {
+    top: -14%;
+  }
+}
+
+@keyframes SlideIn {
+  0% {
+    top: -14%;
+  }
+
+  100% {
+    top: -5%;
+  }
+}
+
+.block.block1 {
+  top: 68%;
+  left: 14%;
+  width: 70px;
+  height: 70px;
+  z-index: -1;
+}
+
+.block.block3 {
+  top: 35%;
+  left: 75%;
+  width: 150px;
+  height: 150px;
+  z-index: -1;
+}
+
+.block.block2 {
+  top: 87%;
+  left: 86%;
+  width: 80px;
+  height: 80px;
+  z-index: 2;
+}
+
+.block.block4 {
+  top: 15%;
+  left: -10%;
+  width: 65px;
+  height: 65px;
+  z-index: 2;
+}
+
+.tester-login-button {
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  top: 65%;
+  transform: translateX(-50%);
+  font-size: 0.8rem;
+  padding: 0.4rem 0.8rem;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  background: transparent;
+
+  box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-weight: 500;
+  background: transparent;
+  backdrop-filter: blur(5px);
+  transition: all 0.2s ease-in-out;
+}

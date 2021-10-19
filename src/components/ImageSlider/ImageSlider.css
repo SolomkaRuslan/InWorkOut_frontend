@@ -1,0 +1,51 @@
+.image-slider {
+  user-select: none;
+  position: relative;
+}
+
+.slider-window {
+  display: flex;
+  overflow: visible;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9;
+  cursor: pointer;
+}
+
+.slider-btn svg {
+  font-size: 5rem;
+  color: rgb(107, 82, 0);
+  opacity: 1;
+}
+
+.slider-btn svg:hover {
+  color: rgb(212, 211, 211);
+}
+
+.slider-left {
+  left: 0.8em;
+}
+
+.slider-right {
+  right: 0.8em;
+}
+
+.slide {
+  position: relative;
+}
+
+.slide-text {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: rgba(107, 82, 0, 1);
+}

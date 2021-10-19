@@ -1,0 +1,60 @@
+.workout {
+  background: rgba(194, 194, 194, 0.7);
+  padding: 0.5rem;
+  border-radius: 5px;
+  color: black;
+  margin-bottom: 0.75rem;
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+.workout:hover {
+  background: rgba(194, 194, 194, 1);
+}
+
+.details {
+  color: black;
+  margin-top: 0.4rem;
+  padding-top: 0.4rem;
+  border-top: 3px solid rgba(107, 82, 0, 0.5);
+  width: 100%;
+}
+
+.workout-exercise + .workout-exercise {
+  margin-top: 0.5rem;
+}
+
+.btns {
+  width: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.btns svg {
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: rgba(0, 9, 51, 0.87);
+}
+
+.btns svg:nth-child(2n) {
+  margin-left: 1rem;
+  color: rgba(155, 22, 22, 0.75);
+}
+
+.btns svg:hover {
+  color: rgba(107, 82, 0, 1);
+}
+
+.workout p {
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 1);
+  font-weight: 500;
+}
+
+.statik-text {
+  margin-right: 0.5rem;
+  font-size: 1.1rem;
+  color: rgba(107, 82, 0, 0.9);
+  font-weight: 700;
+}

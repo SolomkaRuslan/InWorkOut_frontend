@@ -1,0 +1,117 @@
+.notification-wrapper {
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 99;
+  top: 10%;
+  left: 20px;
+  width: 320px;
+}
+
+.notification {
+  font-family: "Montserrat", sans-serif;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 10px 10px 60px -8px rgba(0, 0, 0, 0.2);
+
+  position: relative;
+  padding: 1rem;
+  padding-bottom: 1.25rem;
+  box-sizing: border-box;
+
+  overflow: hidden;
+
+  animation: SlideRight 0.75s forwards;
+  margin-bottom: 1rem;
+}
+
+.notification h5 {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.h5error {
+  color: rgba(136, 17, 17, 0.8);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.h5succsess {
+  color: rgba(17, 80, 15, 0.8);
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.notification-message {
+  color: #fff;
+  font-weight: 400;
+  opacity: 0.7;
+  font-size: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.notification-btn {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  font-size: 2rem;
+  color: #fff;
+  opacity: 0.7;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+
+.notification-btn:hover {
+  color: #152028;
+  opacity: 0.5;
+}
+
+@keyframes SlideRight {
+  0% {
+    transform: translateX(-120%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.notification.exit {
+  animation: SlideLeft 0.75s forwards;
+}
+
+@keyframes SlideLeft {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-120%);
+  }
+}
+
+.notification-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.notification h5 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.notification-bar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 10px;
+}
+
+.notification.error .notification-bar {
+  background-color: rgba(136, 17, 17, 0.5);
+}
+
+.notification.succsess .notification-bar {
+  background-color: rgba(17, 80, 15, 0.5);
+}

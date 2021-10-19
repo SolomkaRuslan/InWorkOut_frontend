@@ -1,0 +1,122 @@
+.main {
+  height: 100%;
+}
+
+.stats--page {
+  text-align: center;
+  color: white;
+
+  height: 100%;
+  display: flex;
+}
+
+.stats--page canvas {
+  z-index: 1000;
+}
+
+.sidebar {
+  padding: 3rem 1rem 0 1rem;
+  width: 20%;
+  min-width: 350px;
+  background: rgba(165, 165, 165, 0.3);
+  backdrop-filter: blur(10px);
+  text-align: left;
+  height: 100vh;
+}
+
+.sidebar-title {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  padding: 2rem 0;
+  opacity: 1;
+}
+
+.sidebar-options {
+  position: relative;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  min-height: 200px;
+  max-height: 70vh;
+  overflow-y: scroll;
+  overflow-y: overlay;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  padding: 1rem;
+  padding-right: 1.25rem;
+}
+
+.sidebar-options::-webkit-scrollbar {
+  width: 0.6em;
+}
+
+.sidebar-options::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.473);
+}
+
+.sidebar-options::-webkit-scrollbar-track {
+  background: #3f3f3fcc;
+
+  border-color: rgba(0, 0, 0, 0.7);
+}
+
+.main-content {
+  padding-top: 6rem;
+  width: 80%;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+.chart-container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.sidebaroption {
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+.sidebaroption h2 {
+  font-size: 1rem;
+  color: #fff;
+  opacity: 0.6;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.sidebaroption:hover,
+.sidebaroption-selected {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.sidebaroption:hover h2 {
+  color: white;
+  opacity: 1;
+}
+
+.first-style,
+.first-style:hover {
+  background: rgba(51, 255, 255, 0.3);
+}
+
+.second-style,
+.second-style:hover {
+  background: rgba(255, 51, 255, 0.3);
+}
+
+.third-style,
+.third-style:hover {
+  background: rgba(255, 255, 51, 0.3);
+}
+
+.side-btns svg {
+  font-size: 1.25rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+.side-btns svg:hover {
+  color: rgba(107, 82, 0, 0.8);
+}

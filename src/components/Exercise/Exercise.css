@@ -1,0 +1,71 @@
+.exercise {
+  width: 100%;
+  padding: 0.75rem;
+
+  border-radius: 5px;
+  font-family: "Merriweather Sans", sans-serif;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  background-color: rgba(3, 1, 14, 0.815);
+  color: rgb(255, 255, 255);
+  text-transform: capitalize;
+}
+
+.exercise:hover {
+  background-color: rgb(3, 1, 14);
+}
+
+.body-info {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: rgba(107, 82, 0, 0.9);
+  margin-bottom: 0.25rem;
+}
+
+.exercise + .exercise {
+  margin-top: 0.5rem;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.exercise-title {
+  font-weight: bold;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+}
+.buttons svg {
+  font-size: 1.5rem;
+  margin-left: 0.75rem;
+  cursor: pointer;
+}
+.buttons svg:nth-child(1n) {
+  color: #0c4d0f65;
+}
+.buttons svg:nth-child(2n) {
+  color: #313131b2;
+}
+.buttons svg:nth-child(3n) {
+  font-size: 1.75rem;
+  margin-left: 0.25rem;
+  color: #6d0d0d6c;
+}
+.buttons svg:hover {
+  color: rgba(107, 82, 0, 0.8);
+}
+
+.updating {
+  padding-top: 0.5rem;
+}
+
+.exercise .myform {
+  margin-top: 0.5rem;
+  background: rgba(255, 255, 255, 0.1);
+}
